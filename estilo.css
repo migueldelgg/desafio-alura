@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #0A3871;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #FAFAFA;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-area-div {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+}
+
+textarea {
+    max-width: 100%;
+    width: 325px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #359456;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0A3871;
+}
+
+.botoes_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.alert-and-text{
+    display: flex;
+    justify-content: center;
+}
+
+.validacao {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.botoes_footer > div {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 16px;
+}
+
+.botao-descriptografar {
+    background-color: #ccc;
+    color: #333;
+}
+
+.recebimento-mensagem {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.copy-button {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 16px;
+}
+
+.recebimento-mensagem h3 {
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+.output {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap; /* Preserve os espaços e quebras de linha */
+}
+
+img {
+    max-width: 100%; /* Faz com que a imagem não ultrapasse o tamanho do container */
+    height: 15px;    /* Mantém a proporção da imagem */
+    width: 15px; /* Define um tamanho específico para a imagem */
+}
+
+/* Layout para tablets */
+@media (max-width: 768px) {
+    .flex {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .text-area-div {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .botoes_footer > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Layout para celulares */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .flex {
+        max-width: 95%;
+    }
+
+    textarea {
+        font-size: 16px;
+        height: 80px; /* Reduz a altura do textarea */
+    }
+
+    .botoes_footer > div {
+        gap: 5px;
+    }
+
+    .validacao {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .input-area h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+    }
+
+    button {
+        padding: 10px; /* Reduz o padding dos botões */
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos botões */
+    }
+
+    .output-message {
+        font-size: 1.2em; /* Reduz o tamanho da fonte da mensagem de saída */
+    }
+}
+

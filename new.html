@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bem vindo!</h1>
+    </header>
+    <h2>CENTRO</h2>
+    <section class="flex">
+        <div class="text-area-div">
+            <textarea class="entrada-texto" placeholder="Digite seu texto"></textarea>
+        </div>
+        <div class="botoes_footer">
+            <div class="alert-and-text">
+                <img src="./assests/alert-icon.png" alt="icone-alerta">
+                <small class="validacao">Apenas letras minúsculas e sem acentos</small>
+            </div>
+            <div>
+                <button onclick="outputInsertCrip(), limparInput()" class="botao-criptografar">Criptografar</button>
+                <button onclick="outputInsertDescript(), limparInput()" class="botao-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </section>
+    <section class="recebimento-mensagem">
+        <h3>Resultado:</h3>
+        <div class="output"></div>
+        <button class="copy-button">Copiar</button>
+    </section>
+
+</body>
+
+</html>
